@@ -18,5 +18,6 @@ module.exports = {
     '<rootDir>/components/**/*.vue',
     '<rootDir>/pages/**/*.vue'
   ],
+  coverageReporters: ['json-summary'],
   testEnvironment: 'jsdom'
 }

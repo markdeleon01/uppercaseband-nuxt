@@ -1,5 +1,5 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils'
-import Vuex from 'vuex'
+import Vuex, { Store } from 'vuex'
 import About from '@/pages/About.vue'
 
 const localVue = createLocalVue()
@@ -37,7 +37,7 @@ describe('About.vue', () => {
     }
 
     // create a mock store with namespaced module and mocked state
-    store = new Vuex.Store({
+    store = new Store({
       modules: {
         members: {
           state,

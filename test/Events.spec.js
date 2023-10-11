@@ -1,5 +1,5 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import Vuex from 'vuex'
+import Vuex, { Store } from 'vuex'
 import Events from '@/pages/Events.vue'
 
 const localVue = createLocalVue()
@@ -80,7 +80,7 @@ describe('Events.vue', () => {
     }
 
     // create a mock store with namespaced module and mocked state
-    store = new Vuex.Store({
+    store = new Store({
       modules: {
         events: {
           state,

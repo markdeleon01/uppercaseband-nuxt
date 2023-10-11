@@ -1,7 +1,7 @@
 version: 2
 
 jobs:
-  ci:
+  frontend-build-test:
     docker:
       - image: cimg/node:lts
     steps:
@@ -25,11 +25,26 @@ jobs:
           command: npm run lint
 
       - run:
+          name: Install xvfb
+          command: |
+            npm run install:xvfb
+
+      - run:
           name: Run tests
           command: npm run test
 
+      - run:
+          name: Istanbul coverage
+          command: |
+            npm run coverage
+
+      - run:
+          name: Istanbul coverage badges
+          command: |
+            npm run make-badges:ci
+
 workflows:
   version: 2
-  ci:
+  frontend-build-test-workflow:
     jobs:
-      - ci
+      - frontend-build-test
