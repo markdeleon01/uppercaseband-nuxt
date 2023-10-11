@@ -14,7 +14,7 @@
     "make-badges": "npx istanbul-badges-readme",
     "make-badges:ci": "npm run make-badges -- --ci",
     "coverage": "jest --coverage",
-    "test:e2e": "start-server-and-test nuxt start :3000 'cypress run --e2e'",
+    "test:e2e": "start-server-and-test 'nuxt start' :3000 'cypress run --e2e'",
     "test:e2e:dev": "start-server-and-test 'nuxt start' :3000 'cypress open --e2e'",
     "test": "jest"
   },
