@@ -32,9 +32,4 @@ workflows:
   version: 2
   ci:
     jobs:
-      - ci:
-          filters:
-            branches:
-              only:
-                - main
-                - master
+      - ci
