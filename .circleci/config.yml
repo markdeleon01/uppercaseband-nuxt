@@ -43,6 +43,11 @@ jobs:
             npm run coverage
 
       - run:
+          name: Front-End e2e Tests
+          command: |
+            npm run test:e2e
+
+      - run:
           name: Istanbul coverage badges
           command: |
             npm run make-badges:ci
