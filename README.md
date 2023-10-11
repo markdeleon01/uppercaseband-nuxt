@@ -1,5 +1,7 @@
 # uppercaseband-nuxt
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/markdeleon01/uppercaseband-nuxt/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/markdeleon01/uppercaseband-nuxt/tree/main)
+
 ## Build Setup
 
 ```bash
