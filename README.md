@@ -1,14 +1,19 @@
 # uppercaseband-nuxt
 
-CI build: 
+**CI build:**
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/markdeleon01/uppercaseband-nuxt/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/markdeleon01/uppercaseband-nuxt/tree/main)
 
-Code unit test coverage:
+**Code unit test coverage:**
 
 | Statements                  | Branches                | Functions                 | Lines             |
 | --------------------------- | ----------------------- | ------------------------- | ----------------- |
 | ![Statements](https://img.shields.io/badge/statements-100%25-brightgreen.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-100%25-brightgreen.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-100%25-brightgreen.svg?style=flat) |
 
+## UPPERCASE band webapp
+
+As a matter of interest and passion for JavaScript and music in general, I created a NuxtJS web application for my band UPPERCASE.
+
+The live site can be found on: https://uppercaseband-nuxt.onrender.com/
 
 ## Build Setup
 
