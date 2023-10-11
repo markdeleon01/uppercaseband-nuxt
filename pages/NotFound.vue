@@ -1,10 +1,11 @@
 <template>
-  <div>
+  <div class="404">
     <h1>Oops!</h1>
     <h3>
-      The {{ resource ? resource : 'page' }} you're looking for is not available.
+      The {{ resource ? resource : "page" }} you're looking for is not
+      available.
     </h3>
-    <NuxtLink to="/">
+    <NuxtLink to="/" class="back">
       Back to the home page
     </NuxtLink>
   </div>
