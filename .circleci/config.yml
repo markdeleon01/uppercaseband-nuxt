@@ -25,6 +25,10 @@ jobs:
           command: npm run lint
 
       - run:
+          name: Run generate
+          command: npm run generate
+
+      - run:
           name: Install xvfb
           command: |
             npm run install:xvfb
