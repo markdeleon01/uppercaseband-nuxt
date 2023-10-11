@@ -3,26 +3,24 @@
     <h1>U P P E R C A S E</h1>
     <hr width="50%" align="center">
     <h2>Discography</h2>
-    <div
+    <DiscographyListing
       v-for="release in discography.releases"
       :key="release.title"
       class="release-item"
-    >
-      <p>
-        <img class="release-thumbnail" :src="release.imageUrl"><br>
-        <span class="release-title">{{ release.title }}</span><br>
-        <span class="release-date">Released: {{ formattedDate(release.releaseDate) }}</span><br>
-        <a :href="release.spotifyUrl" target="_blank">Listen on Spotify</a>
-      </p>
-    </div>
+      :release="release"
+    />
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
+import DiscographyListing from '@/components/DiscographyListing.vue'
 
 export default {
   name: 'Discography',
+  components: {
+    DiscographyListing
+  },
   async fetch ({ store, next }) {
     try {
       await store.dispatch('discography/fetchReleases')

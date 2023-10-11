@@ -4,9 +4,10 @@
     <h1>U P P E R C A S E</h1>
     <hr width="50%" align="center">
     <h2>Events</h2>
-    <div
+    <EventListing
       v-for="event in events.events"
       :key="event.id"
+      :event="event"
       class="event-item"
     >
       <p>
@@ -20,14 +21,19 @@
           target="_blank"
         >Learn more</a>
       </p>
-    </div>
+    </EventListing>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
+import EventListing from '@/components/EventListing.vue'
+
 export default {
   name: 'Events',
+  components: {
+    EventListing
+  },
   async fetch ({ store, next }) {
     try {
       await store.dispatch('events/fetchEvents')
