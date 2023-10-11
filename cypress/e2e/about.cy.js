@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // https://docs.cypress.io/api/introduction/api.html
 
 describe('Test the about page', () => {
