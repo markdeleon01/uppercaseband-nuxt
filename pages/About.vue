@@ -3,7 +3,9 @@
     <h1>U P P E R C A S E</h1>
     <hr width="50%" align="center">
     <h2>Band Members</h2>
-
+    <p v-for="member in members.members" :key="member.name" class="member-item">
+      <span>{{ member.name }} - {{ member.role }}</span>
+    </p>
     <hr width="50%" align="center">
     <p class="band-pic">
       <img src="uppercase2019-bandPic.png">
@@ -43,7 +45,34 @@
   </div>
 </template>
 
+<script>
+import { mapState } from 'vuex'
+
+export default {
+  name: 'About',
+  async fetch ({ store, next }) {
+    try {
+      await store.dispatch('members/fetchMembers')
+    } catch (e) {
+      if (e.response && e.response.status === 404) {
+        // redirect to 404 page with name of resource missing
+        next({ name: 'NotFound', params: { resource: 'page' } })
+      } else {
+        next({ name: 'NetworkIssue' })
+      }
+    }
+  },
+  computed: {
+    // map store module and expose to component as data
+    ...mapState(['members'])
+  }
+}
+</script>
+
 <style scoped>
+h2 {
+  padding-bottom: 15px;
+}
 .band-pic img {
   padding-top: 20px;
   height: 300px;
