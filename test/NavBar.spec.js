@@ -8,5 +8,6 @@ describe('NavBar.vue', () => {
     })
 
     expect(wrapper.vm).toBeTruthy()
+    expect(wrapper.find('#nav')).toBeTruthy()
   })
 })

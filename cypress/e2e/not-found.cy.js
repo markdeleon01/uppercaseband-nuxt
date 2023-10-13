@@ -18,7 +18,7 @@ describe('Test the not found page', () => {
     cy.contains('.description', 'Back to the home page')
 
     cy.visit('/NotFound')
-    cy.get('.404').should('have.length', 1)
+    cy.get('.not-found').should('have.length', 1)
     cy.title().should('eq', 'U P P E R C A S E')
     cy.contains('h1', 'Oops!')
     cy.contains('h3', 'looking for is not available.')
