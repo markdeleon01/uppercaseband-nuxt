@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <NuxtLoadingIndicator />
     <NavBar />
     <div id="page-header">
       <h1>U P P E R C A S E</h1>
