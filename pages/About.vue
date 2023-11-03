@@ -1,12 +1,9 @@
 <template>
   <div class="about">
-    <h1>U P P E R C A S E</h1>
-    <hr width="50%" align="center">
     <h2>Band Members</h2>
     <p v-for="member in members.members" :key="member.name" class="member-item">
       <span>{{ member.name }} - {{ member.role }}</span>
     </p>
-    <hr width="50%" align="center">
     <p class="band-pic">
       <img src="uppercase2019-bandPic.png">
     </p>
