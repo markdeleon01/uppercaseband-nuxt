@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <NavBar />
-    <nuxt />
+    <div id="page-header">
+      <h1>U P P E R C A S E</h1>
+    </div>
+    <div id="page-section">
+      <nuxt />
+    </div>
   </div>
 </template>
 
@@ -22,6 +27,16 @@ export default {
   text-align: center;
   color: #2c3e50;
   display: grid;
+}
+
+#page-header {
+  border-bottom: 1px;
+  border-bottom-color: grey;
+  border-bottom-style: solid;
+}
+
+#page-section {
+  padding-top: 20px;
 }
 
 #nav {
