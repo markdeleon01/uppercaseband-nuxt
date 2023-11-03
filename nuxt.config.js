@@ -1,4 +1,15 @@
 export default {
+  loading: {
+    color: 'royalblue',
+    height: '2px',
+    continuous: true,
+    throttle: 0
+  },
+  loadingIndicator: {
+    name: 'circle',
+    color: 'royalblue',
+    background: 'white'
+  },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
