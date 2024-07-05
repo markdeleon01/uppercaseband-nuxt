@@ -40,18 +40,4 @@ export default {
   padding-top: 20px;
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-  text-decoration: underline;
-}
-
-#nav a.nuxt-link-exact-active {
-  color: royalblue;
-  text-decoration: none;
-}
 </style>
