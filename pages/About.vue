@@ -33,10 +33,10 @@
         around the world.
       </p>
       <p>
-        The band released its newest single "<i>Tanging Ikaw</i>" on February 9,
-        2019, which was featured on Spotify's New Music Friday Philippines
-        playlist on its debut week, and has enjoyed popularity and heavy
-        streaming from listeners in the Philippines.
+        The band released its newest singles &quot;<i>Tanging Ikaw</i>&quot; on
+        February 9, 2019, and &quot;<i>Ligaw Na Tadhana</i>&quot; on March 23, 2023
+        which were featured on Spotify&apos;s New Music Friday Philippines playlist on its debut week,
+        and have enjoyed popularity and heavy streaming from listeners in the Philippines.
       </p>
     </div>
   </div>
