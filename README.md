@@ -13,7 +13,7 @@
 
 As a matter of interest and passion for JavaScript and music in general, I created a NuxtJS web application for my band UPPERCASE.
 
-The live site can be found on: https://uppercaseband-nuxt.onrender.com/
+The live site can be found on: [Render](https://uppercaseband-nuxt.onrender.com/)
 
 ## Build Setup
 
