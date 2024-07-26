@@ -17,9 +17,8 @@ export const mutations = {
 
 export const actions = {
   // asynchronous call on mutations
-  fetchMembers ({ commit }) {
-    return MemberService.getMembers().then((response) => {
-      commit('SET_MEMBERS', response.data)
-    })
+  async fetchMembers ({ commit }) {
+    const response = await MemberService.getMembers()
+    commit('SET_MEMBERS', response.data)
   }
 }
